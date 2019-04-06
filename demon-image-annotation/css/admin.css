@@ -1,0 +1,19 @@
+#wpadminbar #wp-admin-bar-dia .count-0{ opacity:.5;}
+
+.wp-list-table .column-cb { width: 3%; }
+.wp-list-table .column-note_img_ID { width: 15%; }
+.wp-list-table .column-note_author { width: 17%; }
+.wp-list-table .column-note_author img { float:left; margin-right:10px; }
+.wp-list-table .column-note_text { width: 30%; }
+.wp-list-table .column-note_response { width: 15%; }
+.wp-list-table .column-note_action { width: 15%; }
+
+.wp-list-table td, .wp-list-table th{ padding-bottom:30px; border-bottom:#CCC solid 1px;}
+.wp-list-table th.manage-column{ padding-bottom:0px; border-bottom:#CCC solid 1px;}
+
+.wp-list-table th.check-column {border-left: 4px solid #fff;}
+.wp-list-table .odd th.check-column {border-left: 4px solid #F9F9F9;}
+.wp-list-table .unapproved td, .wp-list-table .unapproved th{ background:#FFC;}
+.wp-list-table .unapproved th.check-column {border-left: 4px solid #FC0;}
+.wp-list-table .deleted td, .wp-list-table .deleted th{ background:#fef7f1;}
+.wp-list-table .deleted th.check-column {border-left: 4px solid #d54e21;}

@@ -1,0 +1,323 @@
+/*image note desc*/
+.dia-holder .dia-desc-holder{
+	font-size:11px;
+	color:#999;
+	text-align:left;
+	display: inline-block;
+	width:100%;
+}
+
+.dia-holder .dia-desc{
+	margin-left:10px;
+}
+
+/*image add a note button*/
+.dia-holder .dia-add {
+	background: url(../images/asterisk_yellow.png) no-repeat 3px 3px;
+    border: solid 0px #ccc !important;
+    color: #999 !important;
+    cursor: pointer;
+    display: block;
+    float: right;
+    font-size: 11px;    
+    height: 18px;
+    line-height: 18px;    
+    padding: 2px 10px 0px 20px;
+    text-decoration: none;
+}
+
+.dia-holder .dia-add:hover {
+    color: #999;
+}
+
+/*image note loader*/
+.dia-holder .dia-loading {
+	background: url(../images/loadinfo.gif) no-repeat center #000;
+	opacity:.6;
+}
+
+/*image note error*/
+.dia-holder .dia-error {
+	background: url(../images/error.gif) no-repeat;
+}
+
+/*image note author*/
+.dia-holder .dia-author {
+	font-size:12px;
+	font-style:italic;
+	color:#CCC;
+	margin-top:5px;
+	margin-bottom:3px;
+}
+
+.dia-holder .dia-author img {
+	border: 0px;
+}
+
+/*image note canvas*/
+.dia-holder .dia-canvas {
+	background-position: left top;
+    background-repeat: no-repeat;
+    display: block;
+    position: relative;
+	
+	-moz-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+
+/*image note move area*/
+.dia-holder .dia-view {
+    display: none;
+    position: relative;
+}
+.dia-holder .dia-area {
+    border: 1px solid #000000;
+    position: absolute;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+}
+.dia-holder .dia-area div {
+    border: 1px solid #FFFFFF;
+    display: block;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+}
+.dia-holder .dia-area-hover div {
+    border-color: #28B6F1 !important;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+}
+.dia-holder .dia-area-editable {
+    cursor: pointer;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+}
+.dia-holder .dia-area-editable-hover div {
+    border-color: #28B6F1 !important;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+}
+
+/*image note list area*/
+.dia-holder .dia-note {
+    background: none repeat scroll 0 0;
+	background-image:url(../images/black.png);
+    border: solid 1px #333;
+    color: #FFF;
+    display: none;
+    font-size: 12px;
+    max-width: 200px;
+    padding: 6px 10px;
+    position: absolute;
+}
+.dia-holder .dia-note .actions {
+    display: block;
+    font-size: 80%;
+}
+
+.dia-holder .dia-note .dia-author{
+	font-style: italic;
+	color:#999;
+}
+
+/*image note list area*/
+.dia-holder .dia-edit {
+    display: none;
+}
+
+/*image note form*/
+#dia-edit-form {
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box; /* Firefox, other Gecko */
+	box-sizing: border-box; /* Opera/IE 8+ */
+	
+    font-size: 12px;
+	background: #fff none repeat scroll 0 0;
+    border: 1px solid #333;
+    height: 250px;
+    padding: 7px;
+    position: absolute;
+    width: 300px;
+	margin-top:10px;
+	text-align:center;
+}
+#dia-edit-form form {
+    clear: right;
+    margin: 0 !important;
+    padding: 0;
+    z-index: 999;
+}
+#dia-edit-form label{
+	width:20%;
+	display:inline-block;
+}
+#dia-edit-form .box {
+    margin: 0;
+}
+
+#dia-edit-form input {
+	font-size:12px;
+	margin:1px;
+	width:75%;
+}
+
+#dia-edit-form textarea {
+	font-size:12px;
+    height: 80px;   
+    width: 95%;
+	resize: none;
+	padding:8px 10px 8px 10px;
+}
+#dia-edit-form fieldset {
+    background: transparent none repeat scroll 0 0;
+}
+#dia-edit-form .form-item {
+    margin: 0 0 5px;
+}
+#dia-edit-form .form-button, .dia-holder #dia-edit-form .form-submit {
+    margin: 0;
+}
+#dia-edit-form a {
+	background-color: #333;
+    background-repeat: no-repeat;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    float: left;
+    font-size: 13px;
+    line-height: 18px;        
+    padding: 2px 0 2px 0px;
+    margin: 3px 6px 3px 0;
+    width: 80px;
+	height: 25px;
+	text-align:center;
+	text-transform:uppercase;
+}
+#dia-edit-form a:hover {
+    background-color: #000;
+}
+
+/*image note edit area*/
+.dia-holder .dia-edit-area {
+    border: 1px solid #FC0;
+    cursor: move;
+    display: block;
+    height: 60px;
+    left: 10px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 10px;
+    width: 60px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+}
+.dia-holder .dia-edit-area .dia-holder .ui-resizable-handle {
+    opacity: 0.8;
+}
+
+/*image note button icon*/
+#dia-edit-form .dia-edit-ok {
+    
+}
+#dia-edit-form .dia-edit-delete {
+    
+}
+#dia-edit-form .dia-edit-close {
+    
+}
+
+/*image note resize*/
+.dia-holder .ui-resizable {
+    position: relative;
+}
+.dia-holder .ui-resizable-handle {
+    position: absolute;
+    font-size: 0.1px;
+    z-index: 99999;
+    display: block;
+}
+.dia-holder .ui-resizable-disabled .dia-holder .ui-resizable-handle, .dia-holder .ui-resizable- autohide .dia-holder .ui-resizable-handle {
+    display: block;
+}
+.dia-holder .ui-resizable-n {
+    cursor: n-resize;
+    height: 7px;
+    width: 100%;
+    top: -5px;
+    left: 0px;
+}
+.dia-holder .ui-resizable-s {
+    cursor: s-resize;
+    height: 7px;
+    width: 100%;
+    bottom: -5px;
+    left: 0px;
+}
+.dia-holder .ui-resizable-e {
+    cursor: e-resize;
+    width: 7px;
+    right: -5px;
+    top: 0px;
+    height: 100%;
+}
+.dia-holder .ui-resizable-w {
+    cursor: w-resize;
+    width: 7px;
+    left: -5px;
+    top: 0px;
+    height: 100%;
+}
+.dia-holder .ui-resizable-se {
+    cursor: se-resize;
+    width: 12px;
+    height: 12px;
+    right: 1px;
+    bottom: 1px;
+}
+.dia-holder .ui-resizable-sw {
+    cursor: sw-resize;
+    width: 9px;
+    height: 9px;
+    left: -5px;
+    bottom: -5px;
+}
+.dia-holder .ui-resizable-nw {
+    cursor: nw-resize;
+    width: 9px;
+    height: 9px;
+    left: -5px;
+    top: -5px;
+}
+.dia-holder .ui-resizable-ne {
+    cursor: ne-resize;
+    width: 9px;
+    height: 9px;
+    right: -5px;
+    top: -5px;
+}
+
+/*image note comments thumbnail*/
+.dia-thumbnail, .dia-thumbnail-src{
+	width:55px; height:55px;
+}
+
+.dia-thumbnail {
+	overflow: hidden; border:3px solid #666;
+	border: solid 3px #333;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	position: relative;
+	background: url(../images/ajax-loader.gif) no-repeat center center #FFFFFF;
+}
+
+.dia-thumbnail:hover {
+	border: solid 3px #000;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+#errormsg{ padding:10px 0; }
+#dia-action{ positive:relative; display:flex; justify-content:center;}
